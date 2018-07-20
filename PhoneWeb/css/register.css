@@ -1,68 +1,39 @@
-#header1 {
-  font-family: PingFangSC-Medium;
-  color: white;
-  line-height: 0.6933333333rem;
-  width: 100%;
-  height: 1.7066666667rem;
-  background: #333334;
-  padding-top: 0.7733333333rem;
-  text-align: center;
-  position: relative; }
-  #header1 .header-title {
-    font-size: 0.4933333333rem; }
-  #header1 .header-btn {
-    font-size: 0.3733333333rem;
-    position: absolute;
-    bottom: 0.24rem;
-    left: 0.2rem; }
-    #header1 .header-btn .arrowhead {
-      display: inline-block;
-      width: 0.2933333333rem;
-      height: 0.2933333333rem;
-      border-left: 0.04rem solid #FFF;
-      border-bottom: 0.04rem solid #FFF;
-      -webkit-transform: rotate(45deg);
-      -moz-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-      -o-transform: rotate(45deg);
-      transform: rotate(45deg);
-      position: relative;
-      top: 0.0133333333rem;
-      left: 0.1066666667rem; }
+body {
+  background: #ffffff; }
 
-#header2 {
+#header {
   width: 100%;
   height: 3.68rem;
   line-height: 0;
   background: linear-gradient(-90deg, #6c8bfe, #6a9eff);
   overflow: hidden; }
-  #header2 .img-close {
+  #header .img-close {
     width: 0.5866666667rem;
     height: 0.5866666667rem;
     margin-top: 0.4266666667rem;
     margin-left: 0.4266666667rem; }
-    #header2 .img-close img {
+    #header .img-close img {
       width: 0.5866666667rem;
       height: 0.5866666667rem; }
-  #header2 .img-logo {
+  #header .img-logo {
     text-align: center; }
-    #header2 .img-logo img {
+    #header .img-logo img {
       width: 4.6133333333rem;
       height: 0.8533333333rem; }
-  #header2 .btn {
-    text-align: center;
-    margin-top: 0.6266666667rem; }
-    #header2 .btn a {
+  #header .btn {
+    text-align: center; }
+    #header .btn a {
       padding: 0.1466666667rem 0.52rem;
       background: #FFF;
       font-size: 0.4rem;
+      line-height: 1.7066666667rem;
       font-family: PingFangSC-Regular;
       color: #707076;
       border-left: 0.0266666667rem solid #E5E5E5;
       text-decoration: none; }
-    #header2 .btn .left-btn {
+    #header .btn .left-btn {
       border-radius: 0.0533333333rem 0 0 0.0533333333rem; }
-    #header2 .btn .right-btn {
+    #header .btn .right-btn {
       border-radius: 0 0.0533333333rem 0.0533333333rem 0;
       color: #6C8BFE; }
 
@@ -171,7 +142,7 @@
       padding: 0.16rem 0;
       background: white;
       border-radius: 0.0533333333rem;
-      border: 2px solid #6c8bfe;
+      border: 0.0266666667rem solid #6C8BFE;
       font-size: 0.3733333333rem;
       font-family: PingFangSC-Regular;
       color: #6c8bfe;
@@ -185,9 +156,9 @@
       width: 1.7466666667rem;
       text-align: center;
       padding: 0.16rem 0;
-      background: #E5E5E5;
+      background: #F5F6F7;
       border-radius: 0.0533333333rem;
-      border: 2px solid #c6c6c8;
+      border: none;
       font-size: 0.3733333333rem;
       font-family: PingFangSC-Regular;
       color: #c6c6c8;

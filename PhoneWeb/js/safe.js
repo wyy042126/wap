@@ -88,23 +88,17 @@ function backlogin(){
 function backsafe(){
 	window.location.href="safe.html";
 }
-//返回上一页
-function back(){
-	window.location.href(history.go(-1));
-}
-
-
 function validateform(){
 	var phone=document.forms["safeform"]["phone"].value;
 	var yzm=document.forms["safeform"]["yzm"].value;
-	
+
 	var reg = new RegExp("^[0-9]*$");  //数字正则
 	var regPhoneNum = /^(((13|14|15|18|17)\d{9}))$/;            //电话正则
 
 	if(phone.length!=11||!regPhoneNum.test(phone)){
 		alert("请填写11位有效手机号码!");
 		return false;
-	}else if(!reg.test(dxyzm)){
+	}else if(!reg.test(dxyzm)||dxyzm.length!=5){
 		alert("请填写正确的短信验证码！");
 		return false;
 	}else{

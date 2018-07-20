@@ -44,11 +44,6 @@ function backlogin(){
 function backsafe(){
 	window.location.href="safe.html";
 }
-//返回上一页
-function back(){
-	window.location.href(history.go(-1));
-}
-
 
 
 

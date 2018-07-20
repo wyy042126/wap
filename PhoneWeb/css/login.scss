@@ -2,44 +2,10 @@
     $rem: 75px;
     @return ($px / $rem) + rem;
 }
-
-#header1 {
-    font-family:PingFangSC-Medium;
-    color:rgba(255,255,255,1);
-    line-height:px2rem(52px);
-    width: 100%;
-    height: px2rem(128px);
-    background: #333334;
-    padding-top: px2rem(58px);
-    text-align: center;
-    position: relative;
-    .header-title {
-        font-size:px2rem(37px);
-    }
-    .header-btn {
-        font-size:px2rem(28px);
-        position: absolute;
-        bottom: px2rem(18px);
-        left: px2rem(15px);
-        .arrowhead {
-            display: inline-block;
-            width: px2rem(22px);
-            height: px2rem(22px);
-            border-left: px2rem(3px) solid #FFF;
-            border-bottom: px2rem(3px) solid #FFF;
-            -webkit-transform: rotate(45deg);
-            -moz-transform: rotate(45deg);
-            -ms-transform: rotate(45deg);
-            -o-transform: rotate(45deg);
-            transform: rotate(45deg);
-            position: relative;
-            top: px2rem(1px);
-            left: px2rem(8px);
-        }
-    }
+body{
+    background: #FFF;
 }
-
-#header2 {
+#header {
     width: 100%;
     height: px2rem(276px);
     line-height: 0;
@@ -64,10 +30,10 @@
     }
     .btn {
         text-align: center;
-        margin-top: px2rem(47px);
         a{
             padding: px2rem(11px) px2rem(39px);
             background: #FFF;
+            line-height: px2rem(128px);
             font-size:px2rem(30px);
             font-family:PingFangSC-Regular;
             color:rgba(112,112,118,1);
@@ -196,7 +162,7 @@
         font-family:PingFangSC-Regular;
         color:rgba(151,151,153,1);
         text-align: center;
-        margin-top: px2rem(-16px);
+        margin-top: px2rem(-14px);
         a{
             background: #FFF;
             padding: 0 px2rem(24px);

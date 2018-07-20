@@ -2,44 +2,10 @@
     $rem: 75px;
     @return ($px / $rem) + rem;
 }
-
-#header1 {
-    font-family:PingFangSC-Medium;
-    color:rgba(255,255,255,1);
-    line-height:px2rem(52px);
-    width: 100%;
-    height: px2rem(128px);
-    background: #333334;
-    padding-top: px2rem(58px);
-    text-align: center;
-    position: relative;
-    .header-title {
-        font-size:px2rem(37px);
-    }
-    .header-btn {
-        font-size:px2rem(28px);
-        position: absolute;
-        bottom: px2rem(18px);
-        left: px2rem(15px);
-        .arrowhead {
-            display: inline-block;
-            width: px2rem(22px);
-            height: px2rem(22px);
-            border-left: px2rem(3px) solid #FFF;
-            border-bottom: px2rem(3px) solid #FFF;
-            -webkit-transform: rotate(45deg);
-            -moz-transform: rotate(45deg);
-            -ms-transform: rotate(45deg);
-            -o-transform: rotate(45deg);
-            transform: rotate(45deg);
-            position: relative;
-            top: px2rem(1px);
-            left: px2rem(8px);
-        }
-    }
+body{
+    background: #ffffff;
 }
-
-#header2 {
+#header {
     width: 100%;
     height: px2rem(276px);
     line-height: 0;
@@ -64,11 +30,12 @@
     }
     .btn {
         text-align: center;
-        margin-top: px2rem(47px);
+        // margin-top: px2rem(47px);
         a{
             padding: px2rem(11px) px2rem(39px);
             background: #FFF;
             font-size:px2rem(30px);
+            line-height: px2rem(128px);
             font-family:PingFangSC-Regular;
             color:rgba(112,112,118,1);
             border-left:px2rem(2px) solid #E5E5E5;
@@ -211,7 +178,7 @@
             padding: px2rem(12px) 0;
             background:rgba(255,255,255,1);
             border-radius:px2rem(4px);
-            border:2px solid rgba(108,139,254,1);
+            border:px2rem(2px) solid #6C8BFE;
             font-size:px2rem(28px);
             font-family:PingFangSC-Regular;
             color:rgba(108,139,254,1);   
@@ -226,9 +193,9 @@
             width: px2rem(131px);
             text-align: center;
             padding: px2rem(12px) 0;
-            background:#E5E5E5;
+            background:#F5F6F7;
             border-radius:px2rem(4px);
-            border:2px solid #c6c6c8;
+            border: none;
             font-size:px2rem(28px);
             font-family:PingFangSC-Regular;
             color: #c6c6c8;   

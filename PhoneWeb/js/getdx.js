@@ -56,11 +56,6 @@ function backlogin(){
 function backsafe(){
 	window.location.href="safe.html";
 }
-//返回上一页
-function back(){
-	window.location.href(history.go(-1));
-}
-
 //验证个人注册表单
 function validateform(){
 	var phone=document.forms["pregisterform"]["phone"].value;
@@ -78,7 +73,7 @@ function validateform(){
 	}else if(phone.length!=11||!regPhoneNum.test(phone)){
 		alert("请填写11位有效手机号码！");
 		return false;
-	}else if(!reg.test(dxyzm)){
+	}else if(!reg.test(dxyzm)||dxyzm.length!=5){
 		alert("请填写正确的短信验证码！");
 		return false;
 	}else if(txyzm.length!=4){

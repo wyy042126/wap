@@ -25,11 +25,6 @@ function checkboxchange(){
     document.getElementById('checkboximage').src='img/checkbox'+i+'.png';
     document.getElementById('submit').className='submit'+i;
 }
-//返回上一页
-function back(){
-	window.location.href(history.go(-1));
-}
-
 //验证公司注册表单
 function validateform(){
 	var phone=document.forms["cregisterform"]["phone"].value;
