@@ -1,0 +1,175 @@
+#header1 {
+  font-family: PingFangSC-Medium;
+  color: white;
+  line-height: 0.6933333333rem;
+  width: 100%;
+  height: 1.7066666667rem;
+  background: #333334;
+  padding-top: 0.7733333333rem;
+  text-align: center;
+  position: relative; }
+  #header1 .header-title {
+    font-size: 0.4933333333rem; }
+  #header1 .header-btn {
+    font-size: 0.3733333333rem;
+    position: absolute;
+    bottom: 0.24rem;
+    left: 0.2rem; }
+    #header1 .header-btn .arrowhead {
+      display: inline-block;
+      width: 0.2933333333rem;
+      height: 0.2933333333rem;
+      border-left: 0.04rem solid #FFF;
+      border-bottom: 0.04rem solid #FFF;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+      position: relative;
+      top: 0.0133333333rem;
+      left: 0.1066666667rem; }
+
+#header2 {
+  width: 100%;
+  height: 3.68rem;
+  line-height: 0;
+  background: linear-gradient(-90deg, #6c8bfe, #6a9eff);
+  overflow: hidden; }
+  #header2 .img-close {
+    width: 0.5866666667rem;
+    height: 0.5866666667rem;
+    margin-top: 0.4266666667rem;
+    margin-left: 0.4266666667rem; }
+    #header2 .img-close img {
+      width: 0.5866666667rem;
+      height: 0.5866666667rem; }
+  #header2 .img-logo {
+    text-align: center; }
+    #header2 .img-logo img {
+      width: 4.6133333333rem;
+      height: 0.8533333333rem; }
+  #header2 .btn {
+    text-align: center;
+    margin-top: 0.6266666667rem; }
+    #header2 .btn a {
+      padding: 0.1466666667rem 0.52rem;
+      background: #FFF;
+      font-size: 0.4rem;
+      font-family: PingFangSC-Regular;
+      color: #707076;
+      border-left: 0.0266666667rem solid #E5E5E5;
+      text-decoration: none; }
+    #header2 .btn .left-btn {
+      border-radius: 0.0533333333rem 0 0 0.0533333333rem;
+      color: #6C8BFE;
+      cursor: pointer; }
+    #header2 .btn .right-btn {
+      border-radius: 0 0.0533333333rem 0.0533333333rem 0;
+      cursor: pointer; }
+
+#main {
+  width: 100%;
+  background: #FFF;
+  border-radius: 8px 8px 0px 0px; }
+  #main .div1, #main .div2 {
+    font-size: 0.4rem;
+    font-family: PingFangSC-Regular;
+    width: 8.72rem;
+    height: 1.0666666667rem;
+    margin-top: 0.2666666667rem;
+    margin-left: 0.64rem;
+    margin-right: 0.64rem;
+    border: none;
+    border-bottom-style: solid;
+    border-bottom-color: #E5E5E5;
+    border-bottom-width: 0.0133333333rem; }
+    #main .div1 img, #main .div2 img {
+      width: 0.5866666667rem;
+      height: 0.5866666667rem;
+      position: relative;
+      margin-top: 0.24rem; }
+    #main .div1 input, #main .div2 input {
+      font-size: 0.4rem;
+      width: 6.8933333333rem;
+      height: 0.5866666667rem;
+      border: 0;
+      margin-left: 0.2133333333rem;
+      margin-top: -0.3333333333rem;
+      display: inline-block;
+      vertical-align: middle;
+      outline: none; }
+    #main .div1 input::-webkit-input-placeholder, #main .div2 input::-webkit-input-placeholder {
+      color: #c6c6c8; }
+    #main .div1 input:-moz-placeholder, #main .div2 input:-moz-placeholder {
+      color: #c6c6c8; }
+    #main .div1 input::-moz-placeholder, #main .div2 input::-moz-placeholder {
+      color: #c6c6c8; }
+    #main .div1 input:-ms-input-placeholder, #main .div2 input:-ms-input-placeholder {
+      color: #c6c6c8; }
+    #main .div1 input::placeholder, #main .div2 input::placeholder {
+      color: #c6c6c8; }
+    #main .div1 input::-ms-clear, #main .div2 input::-ms-clear {
+      display: none; }
+    #main .div1 input::-ms-reveal, #main .div2 input::-ms-reveal {
+      display: none; }
+  #main .div1 {
+    margin-top: 0.8533333333rem; }
+  #main .text {
+    font-size: 0.4rem;
+    font-family: PingFangSC-Regular;
+    margin-top: 0.4266666667rem;
+    margin-left: 0.64rem; }
+    #main .text a {
+      text-decoration: none;
+      color: #5668a6; }
+  #main .submit1 {
+    width: 6.1333333333rem;
+    height: 1.1733333333rem;
+    margin: 0.96rem 0 0 1.9333333333rem;
+    font-size: 0.48rem;
+    font-family: PingFangSC-Semibold;
+    color: white;
+    background: #6C8BFE;
+    border-radius: 0.1066666667rem;
+    cursor: pointer; }
+  #main .submit2 {
+    width: 6.1333333333rem;
+    height: 1.1733333333rem;
+    margin: 0.96rem 0 0 1.9333333333rem;
+    font-size: 0.48rem;
+    font-family: PingFangSC-Semibold;
+    color: #979797;
+    background: #E5E5E5;
+    border-radius: 0.1066666667rem;
+    pointer-events: none; }
+  #main .line {
+    width: 8.2133333333rem;
+    height: 0;
+    margin-left: 0.8933333333rem;
+    margin-top: 3.68rem;
+    color: #E5E5E5;
+    border-style: none;
+    border-bottom-color: #E5E5E5;
+    border-bottom-width: 0.0266666667rem;
+    border-bottom-style: solid; }
+  #main .line-text {
+    position: relative;
+    font-size: 0.32rem;
+    font-family: PingFangSC-Regular;
+    color: #979799;
+    text-align: center;
+    margin-top: -0.2133333333rem; }
+    #main .line-text a {
+      background: #FFF;
+      padding: 0 0.32rem; }
+  #main .img-wechat {
+    text-align: center;
+    margin-top: 0.32rem;
+    margin-bottom: 0.6266666667rem; }
+    #main .img-wechat img {
+      width: 1.1733333333rem;
+      height: 1.1733333333rem;
+      cursor: pointer; }
+
+/*# sourceMappingURL=login.css.map */

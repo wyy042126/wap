@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>安全验证</title>
+    <link rel="stylesheet" href="css/findpassword.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="js/safe.js"></script>
+</head>
+<body>
+    <div id="header1">
+        <div class="header-btn" onclick="back()">
+            <div class="arrowhead"></div>
+            <span>返回</span>
+        </div>
+        <div class="header-title">E滁州人才网</div>
+    </div>
+    <div id="main">
+        <div class="main-tittle">
+            <div class="left-arrowhead" onclick="backlogin()"></div>
+            <a class="color2" href="safe.html">安全验证</a>
+            <div class="right-arrowhead"></div>
+            <a class="a2 color1">重新设置登录密码</a>
+        </div>
+        <form action="setpassword.html" method="POST" name="safeform" onsubmit="return validateform()">
+        <div class="div1">
+            <a class="a1">手机号</a>
+            <input type="text" placeholder="请输入登录手机号" class="input1" id="phone">
+        </div>
+        <div class="div2">
+            <a>短信验证码</a>
+            <input type="text" placeholder="请输入验证码" id="yzm">
+            <a class="get" id="get">获取</a>
+        </div>
+        <input type="submit" value="马上验证" id="submit" class="submit1" >
+    </form>
+    </div>
+</body>
+</html>

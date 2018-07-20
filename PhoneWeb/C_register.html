@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="js/companyregister.js"></script>
+</head>
+<body>
+    <div id="header1">
+        <div class="header-btn" onclick="back()">
+            <div class="arrowhead"></div>
+            <span>返回</span>
+        </div>
+        <div class="header-title">E滁州人才网</div>
+    </div>
+    <div id="header2">
+        <div class="img-close"><img src="img/close.png" alt="close"></div>
+        <div class="img-logo"><img src="img/logo.png" alt="logo"></div>
+        <div class="btn">
+            <a class="left-btn" href="login.html">登录</a><a class="right-btn" href="P_register.html">注册</a>
+        </div>
+    </div>
+    <div id="main">
+        <div class="nav-person">
+            <a class="a-company" href="P_register.html">个人应聘注册</a>
+        </div>
+        <div class="nav-company">
+            <a class="a-company" href="C_register.html">企业招聘注册</a>
+            <div class="border"></div>
+        </div>
+        <form action="login.html" method="POST" name="cregisterform" onsubmit="return validateform()">
+        <div class="div1">
+            <a>公司名称</a>
+            <input type="text" placeholder="请输入与营业执照一致名称" name="cname" class="input-margin2 ">
+        </div>
+        <div class="div2">
+            <a>联系人</a>
+            <input type="text" placeholder="请输入2-10字符联系人名称" name="lxr" class="input-margin1">
+        </div>
+        <div class="div2">
+            <a>办公号码</a>
+            <input type="text" placeholder="请输入" name="officephone" class="input-margin2">
+        </div>
+        <div class="div2">
+            <a>手机号码</a>
+            <input type="text" placeholder="请输入11位有效手机号" name="phone" class="input-margin2" >
+        </div>
+        <div class="div2">
+            <a>用户名</a>
+            <input type="text" placeholder="请输入登录用户名" name="username" class="input-margin1">
+        </div>
+        <div class="div2">
+            <a>电子邮箱</a>
+            <input type="email" placeholder="请输入" name="email" class="input-margin2">
+        </div>
+        <div class="div2">
+            <a>设置密码</a>
+            <input type="password" placeholder="请输入" name="setpwd" class="input-margin2">
+        </div>
+        <div class="div2">
+            <a>再次输入密码</a>
+            <input type="password" placeholder="请输入" name="inputpwd" class="input-margin3">
+        </div>
+        <input type="submit" value="立即注册" id="submit" class="submit0">
+    </form>
+    <div class="checkbox-text"><img id="checkboximage" src="img/checkbox0.png" onclick="checkboxchange()"><a class="a1">我已同意</a><a class="a2">E滁州人才网用户招聘协议</a></div>
+    </div>
+</body>
+</html>
