@@ -142,8 +142,10 @@ body{
             display: inline-block;
             vertical-align: middle;
             background-color: transparent;
-            -webkit-appearance: none;         //去除苹果手机样式
         }
+        input[type="submit"], input[type="reset"], input[type="button"],button { 
+            -webkit-appearance: none;              //去掉iphone默认浏览器的样式
+            }
         .input-width1{
             width: 41%;
         }

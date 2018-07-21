@@ -119,7 +119,8 @@ body {
       margin-left: 0.8533333333rem;
       display: inline-block;
       vertical-align: middle;
-      background-color: transparent;
+      background-color: transparent; }
+    #main .div1 input[type="submit"], #main .div1 input[type="reset"], #main .div1 input[type="button"], #main .div1 button, #main .div2 input[type="submit"], #main .div2 input[type="reset"], #main .div2 input[type="button"], #main .div2 button {
       -webkit-appearance: none; }
     #main .div1 .input-width1, #main .div2 .input-width1 {
       width: 41%; }
