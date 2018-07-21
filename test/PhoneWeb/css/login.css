@@ -127,6 +127,7 @@ body {
     color: white;
     background: #6C8BFE;
     border-radius: 0.1066666667rem;
+    box-shadow: 0 0.0533333333rem 0.16rem 0 rgba(108, 139, 254, 0.2);
     cursor: pointer; }
   #main .line {
     width: 8.2133333333rem;
