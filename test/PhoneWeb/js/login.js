@@ -17,6 +17,7 @@ window.onload=function(){
 	
 	var j=0;
 	var pwd=document.getElementById('pwd');
+	var password=document.getElementById('password');
 	pwd.onclick=function(){
 		j=(j+1)%2;
 		pwd.src='img/eyes'+j+'.png';
@@ -28,12 +29,7 @@ window.onload=function(){
 		}
 	}
 }
-//点击切换checkbox按钮图片
-var i=0;
-function checkboxchange(){
-    i=(i+1)%2;
-    document.getElementById('checkboximage').src='img/checkbox'+i+'.png';
-}
+
 
 //返回登录
 function backlogin(){

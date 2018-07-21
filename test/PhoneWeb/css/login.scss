@@ -100,6 +100,7 @@ body{
             display: inline-block;
             vertical-align: middle;
             background-color: transparent;
+            -webkit-appearance: none;         //去除苹果手机样式
         }
         input::-webkit-input-placeholder{
             color: #c6c6c8;

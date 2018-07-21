@@ -142,6 +142,7 @@ body{
             display: inline-block;
             vertical-align: middle;
             background-color: transparent;
+            -webkit-appearance: none;         //去除苹果手机样式
         }
         .input-width1{
             width: 41%;
@@ -248,6 +249,7 @@ body{
         background: #6C8BFE;
         border-radius: px2rem(8px);
         cursor: pointer;
+        vertical-align:middle;
     }
   
     .checkbox-text{

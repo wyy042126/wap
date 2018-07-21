@@ -119,7 +119,8 @@ body {
       margin-left: 0.8533333333rem;
       display: inline-block;
       vertical-align: middle;
-      background-color: transparent; }
+      background-color: transparent;
+      -webkit-appearance: none; }
     #main .div1 .input-width1, #main .div2 .input-width1 {
       width: 41%; }
     #main .div1 .input-margin1, #main .div2 .input-margin1 {
@@ -202,7 +203,8 @@ body {
     color: white;
     background: #6C8BFE;
     border-radius: 0.1066666667rem;
-    cursor: pointer; }
+    cursor: pointer;
+    vertical-align: middle; }
   #main .checkbox-text {
     margin-top: 0.5333333333rem;
     margin-left: 2.1333333333rem;

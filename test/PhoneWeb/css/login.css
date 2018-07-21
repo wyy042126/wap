@@ -84,7 +84,8 @@ body {
       margin-left: 0.2133333333rem;
       display: inline-block;
       vertical-align: middle;
-      background-color: transparent; }
+      background-color: transparent;
+      -webkit-appearance: none; }
     #main .div1 input::-webkit-input-placeholder, #main .div2 input::-webkit-input-placeholder {
       color: #c6c6c8; }
     #main .div1 input:-moz-placeholder, #main .div2 input:-moz-placeholder {
