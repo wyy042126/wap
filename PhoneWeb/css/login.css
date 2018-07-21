@@ -70,14 +70,16 @@ body {
     border-bottom-width: 0.0133333333rem; }
     #main .div1 img, #main .div2 img {
       width: 0.5333333333rem;
-      height: 0.5333333333rem;
       position: relative;
       vertical-align: middle; }
-    #main .div1 .eye, #main .div2 .eye {
+    #main .div1 .eye0, #main .div2 .eye0 {
       float: right;
-      height: 0.4533333333rem;
       right: 0;
       top: 0.3333333333rem; }
+    #main .div1 .eye1, #main .div2 .eye1 {
+      float: right;
+      right: 0;
+      top: 0.3733333333rem; }
     #main .div1 input, #main .div2 input {
       appearance: none;
       -webkit-appearance: none;

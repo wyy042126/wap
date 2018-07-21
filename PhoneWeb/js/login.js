@@ -23,9 +23,11 @@ window.onload=function(){
 		pwd.src='img/eyes'+j+'.png';
 		if(j==1){
 			password.setAttribute('type','text');
+			pwd.className='eye'+j;
 		}
 		else{
 			password.setAttribute('type','password');
+			pwd.className='eye'+j;
 		}
 	}
 }

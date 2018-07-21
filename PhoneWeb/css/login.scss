@@ -83,15 +83,21 @@ body{
         border-bottom-width: px2rem(1px);
         img{
             width: px2rem(40px);
-            height: px2rem(40px);
+            // height: px2rem(40px);
             position: relative;
             vertical-align: middle;
         }
-        .eye{
+        .eye0{
             float: right;
-            height: px2rem(34px);
+            // height: px2rem(34px);
             right: 0;
             top: px2rem(25px);
+        }
+        .eye1{
+            float: right;
+            // height: px2rem(34px);
+            right: 0;
+            top: px2rem(28px);
         }
       //去掉iphone默认浏览器的样式
         input{ 
