@@ -1,0 +1,277 @@
+@function px2rem($px) {
+    $rem: 75px;
+    @return ($px / $rem) + rem;
+}
+html {
+    min-height: 100%; 
+    /*你需要设置这个参数，确保渐变效果填满整个页面，不会被切断*/
+}
+body{
+    /* Chrome 10+, Safari 5.1+ */
+    background: -webkit-linear-gradient(rgba(106,158,255,1) 50%, #ffffff 50%); 
+    /* Opera 11.1+ */
+    background: -o-linear-gradient(rgba(106,158,255,1) 50%, #ffffff 50%); 
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(rgba(106,158,255,1) 50%, #ffffff 50%); 
+    /* 标准语法（一定要放在最后）*/
+    background: linear-gradient(rgba(106,158,255,1) 50%, #ffffff 50%); 
+    /*最好设置一个背景颜色，万一渐变效果加载失败，背景也不会是空白的*/
+    background-color: #ffffff; 
+}
+#header {
+    width: 100%;
+    height: px2rem(276px);
+    line-height: 0;
+    background:linear-gradient(-90deg,rgba(108,139,254,1),rgba(106,158,255,1));
+    overflow: hidden;
+    .img-close {
+        width: px2rem(44px);
+        height: px2rem(44px);
+        margin-top: px2rem(32px);
+        margin-left: px2rem(32px);
+        img {
+            width: px2rem(44px);
+            height: px2rem(44px);
+        }
+    }
+    .img-logo {
+        text-align: center;
+        img {
+            width: px2rem(346px);
+            height: px2rem(64px);
+        }
+    }
+    .btn {
+        text-align: center;
+        // margin-top: px2rem(47px);
+        a{
+            padding: px2rem(11px) px2rem(39px);
+            background: #FFF;
+            font-size:px2rem(30px);
+            line-height: px2rem(128px);
+            font-family:PingFangSC-Regular;
+            color:rgba(112,112,118,1);
+            border-left:px2rem(2px) solid #E5E5E5;
+            text-decoration: none;
+        }
+        .left-btn{
+            border-radius:px2rem(4px) 0 0 px2rem(4px);
+        }
+        .right-btn {
+            border-radius:0 px2rem(4px) px2rem(4px) 0;
+            color: #6C8BFE;
+        }
+    }
+}
+
+#main {
+    width: 100%;
+    background:#FFF;
+    border-radius:px2rem(8px) px2rem(8px) 0 0;
+    .nav-person{
+        display: inline-block;
+        width: px2rem(264px);
+        height: px2rem(72px);
+        margin-left: px2rem(111px);
+        margin-top: px2rem(16px);
+        text-align: center;
+        a{
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: px2rem(-21px);
+            font-size:px2rem(30px);
+            font-family:PingFangSC-Semibold;
+            color:rgba(108,139,254,1);
+            text-decoration: none;
+        }
+        .a-company{
+            color: #707076;
+        }
+    
+    }
+    .border{
+        border: 0;
+        background: #6C8BFE;
+        border-radius: px2rem(3px);
+        width: px2rem(96px);
+        height: px2rem(6px);
+        margin-left: px2rem(84px);
+        margin-top: px2rem(-10px);
+    }
+    .nav-company{
+        width: px2rem(264px);
+        height: px2rem(72px);
+        display: inline-block;
+        margin-top: px2rem(16px);
+        margin-left: px2rem(-22px);
+        text-align: center;
+        a{
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: px2rem(-21px);
+            font-size:px2rem(30px);
+            font-family:PingFangSC-Semibold;
+            color: #707076;
+            text-decoration: none;
+        }
+        .a-company{
+            color:rgba(108,139,254,1);
+        }
+    }
+    .div1,.div2{
+        font-size:px2rem(30px);
+        font-family:PingFangSC-Regular;
+        color:rgba(198,198,200,1);
+        width: px2rem(654px);
+        margin-top: px2rem(20px);
+        margin-left: px2rem(48px);
+        margin-right: px2rem(48px);
+        border: none;
+        border-bottom-style: solid;
+        border-bottom-color: #E5E5E5;
+        border-bottom-width: px2rem(1px);
+        a{
+            display: inline-block;
+            color:rgba(112,112,118,1);
+            vertical-align: middle;
+             }
+        input{
+            height: px2rem(80px);
+            border: 0;
+            margin-left: px2rem(64px);
+            display: inline-block;
+            vertical-align: middle;
+            background-color: transparent;
+        }
+        .input-width1{
+            width: 41%;
+        }
+        .input-margin1{
+            margin-left: px2rem(124px);
+        }
+        .input-margin2{
+            margin-left: px2rem(94px);
+        }
+        .input-margin3{
+            margin-left: px2rem(34px);
+        }
+        input::-webkit-input-placeholder{
+            color: #c6c6c8;
+        }        
+         input:-moz-placeholder{
+            color: #c6c6c8;
+        }                  
+        input::-moz-placeholder{
+            color: #c6c6c8;
+        }                  
+        input:-ms-input-placeholder            
+         {
+            color: #c6c6c8;
+        } 
+         input::placeholder{
+            color: #c6c6c8;
+        }
+        input::-ms-clear{
+            display: none;
+        }
+        input::-ms-reveal{
+            display: none;
+        }
+        .get{
+            display: inline-block;
+            position: relative;
+            left: px2rem(25px);           
+            height: px2rem(56px);
+            width: px2rem(131px);
+            text-align: center;
+            vertical-align: middle;
+            padding: px2rem(12px) 0;
+            background:rgba(255,255,255,1);
+            border-radius:px2rem(4px);
+            border:px2rem(2px) solid #6C8BFE;
+            font-size:px2rem(28px);
+            font-family:PingFangSC-Regular;
+            color:rgba(108,139,254,1);   
+            cursor: pointer;
+        }
+        .getafter{
+            display: inline-block;
+            position: relative;
+            left: px2rem(25px);           
+            height: px2rem(56px);
+            width: px2rem(131px);
+            text-align: center;
+            vertical-align: middle;
+            padding: px2rem(12px) 0;
+            background:#F5F6F7;
+            border-radius:px2rem(4px);
+            border: none;
+            font-size:px2rem(28px);
+            font-family:PingFangSC-Regular;
+            color: #c6c6c8;   
+            pointer-events: none;
+        }
+        img{
+            position: relative;
+            left: px2rem(25px);           
+            top: px2rem(10px);
+            display: inline-block;
+            vertical-align: middle;
+            width: px2rem(130px);
+            height: px2rem(50px);
+            
+        }
+     
+      
+    }
+    .div1{
+        margin-top: px2rem(40px);
+    }
+    .submit1{
+        width: px2rem(460px);
+        height: px2rem(88px);
+        margin: px2rem(72px) 0 0 px2rem(145px);
+        font-size:px2rem(36px);
+        font-family:PingFangSC-Semibold;
+        color: #979797;
+        background: rgba(229,229,229,1);
+        border-radius: px2rem(8px);
+        pointer-events: none;
+    }
+    .submit0{
+        width: px2rem(460px);
+        height: px2rem(88px);
+        margin: px2rem(72px) 0 0 px2rem(145px);
+        font-size:px2rem(36px);
+        font-family:PingFangSC-Semibold;
+        color:rgba(255,255,255,1);
+        background: #6C8BFE;
+        border-radius: px2rem(8px);
+        cursor: pointer;
+    }
+  
+    .checkbox-text{
+        margin-top:px2rem(40px);
+        margin-left: px2rem(160px);
+        margin-bottom: px2rem(90px);
+        font-size:px2rem(24px);
+        font-family:PingFangSC-Regular;
+        img{
+            width: px2rem(24px);
+            height: px2rem(24px);
+            vertical-align:middle;
+            margin-top: px2rem(-4px);
+            margin-right: px2rem(8px);
+        } 
+    }
+    .a1{
+        color: #707076;
+    }
+    .a2{
+        color: #5668A6;
+        cursor: pointer;
+    }
+
+   
+
+}

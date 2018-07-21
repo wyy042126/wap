@@ -1,0 +1,225 @@
+@charset "UTF-8";
+html {
+  min-height: 100%;
+  /*你需要设置这个参数，确保渐变效果填满整个页面，不会被切断*/ }
+
+body {
+  /* Chrome 10+, Safari 5.1+ */
+  background: -webkit-linear-gradient(#6a9eff 50%, #ffffff 50%);
+  /* Opera 11.1+ */
+  background: -o-linear-gradient(#6a9eff 50%, #ffffff 50%);
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(#6a9eff 50%, #ffffff 50%);
+  /* 标准语法（一定要放在最后）*/
+  background: linear-gradient(#6a9eff 50%, #ffffff 50%);
+  /*最好设置一个背景颜色，万一渐变效果加载失败，背景也不会是空白的*/
+  background-color: #ffffff; }
+
+#header {
+  width: 100%;
+  height: 3.68rem;
+  line-height: 0;
+  background: linear-gradient(-90deg, #6c8bfe, #6a9eff);
+  overflow: hidden; }
+  #header .img-close {
+    width: 0.5866666667rem;
+    height: 0.5866666667rem;
+    margin-top: 0.4266666667rem;
+    margin-left: 0.4266666667rem; }
+    #header .img-close img {
+      width: 0.5866666667rem;
+      height: 0.5866666667rem; }
+  #header .img-logo {
+    text-align: center; }
+    #header .img-logo img {
+      width: 4.6133333333rem;
+      height: 0.8533333333rem; }
+  #header .btn {
+    text-align: center; }
+    #header .btn a {
+      padding: 0.1466666667rem 0.52rem;
+      background: #FFF;
+      font-size: 0.4rem;
+      line-height: 1.7066666667rem;
+      font-family: PingFangSC-Regular;
+      color: #707076;
+      border-left: 0.0266666667rem solid #E5E5E5;
+      text-decoration: none; }
+    #header .btn .left-btn {
+      border-radius: 0.0533333333rem 0 0 0.0533333333rem; }
+    #header .btn .right-btn {
+      border-radius: 0 0.0533333333rem 0.0533333333rem 0;
+      color: #6C8BFE; }
+
+#main {
+  width: 100%;
+  background: #FFF;
+  border-radius: 0.1066666667rem 0.1066666667rem 0 0; }
+  #main .nav-person {
+    display: inline-block;
+    width: 3.52rem;
+    height: 0.96rem;
+    margin-left: 1.48rem;
+    margin-top: 0.2133333333rem;
+    text-align: center; }
+    #main .nav-person a {
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: -0.28rem;
+      font-size: 0.4rem;
+      font-family: PingFangSC-Semibold;
+      color: #6c8bfe;
+      text-decoration: none; }
+    #main .nav-person .a-company {
+      color: #707076; }
+  #main .border {
+    border: 0;
+    background: #6C8BFE;
+    border-radius: 0.04rem;
+    width: 1.28rem;
+    height: 0.08rem;
+    margin-left: 1.12rem;
+    margin-top: -0.1333333333rem; }
+  #main .nav-company {
+    width: 3.52rem;
+    height: 0.96rem;
+    display: inline-block;
+    margin-top: 0.2133333333rem;
+    margin-left: -0.2933333333rem;
+    text-align: center; }
+    #main .nav-company a {
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: -0.28rem;
+      font-size: 0.4rem;
+      font-family: PingFangSC-Semibold;
+      color: #707076;
+      text-decoration: none; }
+    #main .nav-company .a-company {
+      color: #6c8bfe; }
+  #main .div1, #main .div2 {
+    font-size: 0.4rem;
+    font-family: PingFangSC-Regular;
+    color: #c6c6c8;
+    width: 8.72rem;
+    margin-top: 0.2666666667rem;
+    margin-left: 0.64rem;
+    margin-right: 0.64rem;
+    border: none;
+    border-bottom-style: solid;
+    border-bottom-color: #E5E5E5;
+    border-bottom-width: 0.0133333333rem; }
+    #main .div1 a, #main .div2 a {
+      display: inline-block;
+      color: #707076;
+      vertical-align: middle; }
+    #main .div1 input, #main .div2 input {
+      height: 1.0666666667rem;
+      border: 0;
+      margin-left: 0.8533333333rem;
+      display: inline-block;
+      vertical-align: middle;
+      background-color: transparent; }
+    #main .div1 .input-width1, #main .div2 .input-width1 {
+      width: 41%; }
+    #main .div1 .input-margin1, #main .div2 .input-margin1 {
+      margin-left: 1.6533333333rem; }
+    #main .div1 .input-margin2, #main .div2 .input-margin2 {
+      margin-left: 1.2533333333rem; }
+    #main .div1 .input-margin3, #main .div2 .input-margin3 {
+      margin-left: 0.4533333333rem; }
+    #main .div1 input::-webkit-input-placeholder, #main .div2 input::-webkit-input-placeholder {
+      color: #c6c6c8; }
+    #main .div1 input:-moz-placeholder, #main .div2 input:-moz-placeholder {
+      color: #c6c6c8; }
+    #main .div1 input::-moz-placeholder, #main .div2 input::-moz-placeholder {
+      color: #c6c6c8; }
+    #main .div1 input:-ms-input-placeholder, #main .div2 input:-ms-input-placeholder {
+      color: #c6c6c8; }
+    #main .div1 input::placeholder, #main .div2 input::placeholder {
+      color: #c6c6c8; }
+    #main .div1 input::-ms-clear, #main .div2 input::-ms-clear {
+      display: none; }
+    #main .div1 input::-ms-reveal, #main .div2 input::-ms-reveal {
+      display: none; }
+    #main .div1 .get, #main .div2 .get {
+      display: inline-block;
+      position: relative;
+      left: 0.3333333333rem;
+      height: 0.7466666667rem;
+      width: 1.7466666667rem;
+      text-align: center;
+      vertical-align: middle;
+      padding: 0.16rem 0;
+      background: white;
+      border-radius: 0.0533333333rem;
+      border: 0.0266666667rem solid #6C8BFE;
+      font-size: 0.3733333333rem;
+      font-family: PingFangSC-Regular;
+      color: #6c8bfe;
+      cursor: pointer; }
+    #main .div1 .getafter, #main .div2 .getafter {
+      display: inline-block;
+      position: relative;
+      left: 0.3333333333rem;
+      height: 0.7466666667rem;
+      width: 1.7466666667rem;
+      text-align: center;
+      vertical-align: middle;
+      padding: 0.16rem 0;
+      background: #F5F6F7;
+      border-radius: 0.0533333333rem;
+      border: none;
+      font-size: 0.3733333333rem;
+      font-family: PingFangSC-Regular;
+      color: #c6c6c8;
+      pointer-events: none; }
+    #main .div1 img, #main .div2 img {
+      position: relative;
+      left: 0.3333333333rem;
+      top: 0.1333333333rem;
+      display: inline-block;
+      vertical-align: middle;
+      width: 1.7333333333rem;
+      height: 0.6666666667rem; }
+  #main .div1 {
+    margin-top: 0.5333333333rem; }
+  #main .submit1 {
+    width: 6.1333333333rem;
+    height: 1.1733333333rem;
+    margin: 0.96rem 0 0 1.9333333333rem;
+    font-size: 0.48rem;
+    font-family: PingFangSC-Semibold;
+    color: #979797;
+    background: #e5e5e5;
+    border-radius: 0.1066666667rem;
+    pointer-events: none; }
+  #main .submit0 {
+    width: 6.1333333333rem;
+    height: 1.1733333333rem;
+    margin: 0.96rem 0 0 1.9333333333rem;
+    font-size: 0.48rem;
+    font-family: PingFangSC-Semibold;
+    color: white;
+    background: #6C8BFE;
+    border-radius: 0.1066666667rem;
+    cursor: pointer; }
+  #main .checkbox-text {
+    margin-top: 0.5333333333rem;
+    margin-left: 2.1333333333rem;
+    margin-bottom: 1.2rem;
+    font-size: 0.32rem;
+    font-family: PingFangSC-Regular; }
+    #main .checkbox-text img {
+      width: 0.32rem;
+      height: 0.32rem;
+      vertical-align: middle;
+      margin-top: -0.0533333333rem;
+      margin-right: 0.1066666667rem; }
+  #main .a1 {
+    color: #707076; }
+  #main .a2 {
+    color: #5668A6;
+    cursor: pointer; }
+
+/*# sourceMappingURL=register.css.map */

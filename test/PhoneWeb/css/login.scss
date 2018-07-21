@@ -1,0 +1,189 @@
+@function px2rem($px) {
+    $rem: 75px;
+    @return ($px / $rem) + rem;
+}
+html {
+    min-height: 100%; 
+    /*你需要设置这个参数，确保渐变效果填满整个页面，不会被切断*/
+}
+body{
+    /* Chrome 10+, Safari 5.1+ */
+    background: -webkit-linear-gradient(rgba(106,158,255,1) 50%, #ffffff 50%); 
+    /* Opera 11.1+ */
+    background: -o-linear-gradient(rgba(106,158,255,1) 50%, #ffffff 50%); 
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(rgba(106,158,255,1) 50%, #ffffff 50%); 
+    /* 标准语法（一定要放在最后）*/
+    background: linear-gradient(rgba(106,158,255,1) 50%, #ffffff 50%); 
+    /*最好设置一个背景颜色，万一渐变效果加载失败，背景也不会是空白的*/
+    background-color: #ffffff; 
+}
+#header {
+    width: 100%;
+    height: px2rem(276px);
+    line-height: 0;
+    background:linear-gradient(-90deg,rgba(108,139,254,1),rgba(106,158,255,1));
+    overflow: hidden;
+    .img-close {
+        width: px2rem(44px);
+        height: px2rem(44px);
+        margin-top: px2rem(32px);
+        margin-left: px2rem(32px);
+        img {
+            width: px2rem(44px);
+            height: px2rem(44px);
+        }
+    }
+    .img-logo {
+        text-align: center;
+        img {
+            width: px2rem(346px);
+            height: px2rem(64px);
+        }
+    }
+    .btn {
+        text-align: center;
+        a{
+            padding: px2rem(11px) px2rem(39px);
+            background: #FFF;
+            line-height: px2rem(128px);
+            font-size:px2rem(30px);
+            font-family:PingFangSC-Regular;
+            color:rgba(112,112,118,1);
+            border-left:px2rem(2px) solid #E5E5E5;
+            text-decoration: none;
+        }
+        .left-btn{
+            border-radius:px2rem(4px) 0 0 px2rem(4px);
+            color: #6C8BFE;
+            cursor: pointer;
+        }
+        .right-btn {
+            border-radius:0 px2rem(4px) px2rem(4px) 0;
+            cursor: pointer;
+        }
+    }
+}
+
+#main {
+    width: 100%;
+    background:#FFF;
+    border-radius:px2rem(8px) px2rem(8px) 0 0;
+    .div1,.div2{
+        font-size:px2rem(30px);
+        font-family:PingFangSC-Regular;
+        width: px2rem(654px);
+        // margin-top: px2rem(20px);
+        margin-left: px2rem(48px);
+        margin-right: px2rem(48px);
+        border: none;
+        border-bottom-style: solid;
+        border-bottom-color: #E5E5E5;
+        border-bottom-width: px2rem(1px);
+        img{
+            width: px2rem(40px);
+            height: px2rem(40px);
+            position: relative;
+            vertical-align: middle;
+        }
+        .eye{
+            float: right;
+            right: 0;
+            top: px2rem(20px);
+        }
+        input{
+            height: px2rem(80px);
+            border: 0;
+            margin-left: px2rem(16px);
+            display: inline-block;
+            vertical-align: middle;
+            background-color: transparent;
+        }
+        input::-webkit-input-placeholder{
+            color: #c6c6c8;
+        }        
+         input:-moz-placeholder{
+            color: #c6c6c8;
+        }                  
+        input::-moz-placeholder{
+            color: #c6c6c8;
+        }                  
+        input:-ms-input-placeholder            
+         {
+            color: #c6c6c8;
+        } 
+         input::placeholder{
+            color: #c6c6c8;
+        }
+        input::-ms-clear{
+            display: none;
+        }
+        input::-ms-reveal{
+            display: none;
+        }
+    
+    }
+    .div1{
+        position: relative;
+        top: px2rem(64px);
+    }
+    .div2{
+        margin-top: px2rem(84px);
+    }
+    .text{
+        font-size:px2rem(30px);
+        font-family:PingFangSC-Regular;
+        margin-top: px2rem(32px);
+        margin-left: px2rem(48px);
+        a{
+            text-decoration: none;
+            color:rgba(86,104,166,1);
+        }
+    }
+    .submit1{
+        width: px2rem(460px);
+        height: px2rem(88px);
+        margin: px2rem(72px) 0 0 px2rem(145px);
+        font-size:px2rem(36px);
+        font-family:PingFangSC-Semibold;
+        color:rgba(255,255,255,1);
+        background: #6C8BFE;
+        border-radius: px2rem(8px);
+        cursor: pointer;
+    }
+    .line{
+        width: px2rem(616px);
+        height:0;
+        margin-left: px2rem(67px);
+        margin-top: px2rem(276px);
+        color: #E5E5E5;
+        border-style: none;
+        border-bottom-color: #E5E5E5;
+        border-bottom-width: px2rem(2px);
+        border-bottom-style: solid;
+    }
+    .line-text{
+        position: relative;
+        font-size:px2rem(24px);
+        font-family:PingFangSC-Regular;
+        color:rgba(151,151,153,1);
+        text-align: center;
+        margin-top: px2rem(-14px);
+        a{
+            background: #FFF;
+            padding: 0 px2rem(24px);
+
+        }
+    }
+    .img-wechat{
+        text-align: center;
+        margin-top: px2rem(24px);
+        margin-bottom: px2rem(47px);
+        img{
+            width: px2rem(88px);
+            height: px2rem(88px);
+            cursor: pointer;
+        }
+    }
+
+}

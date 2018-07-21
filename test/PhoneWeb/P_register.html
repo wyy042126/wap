@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>E滁州人才网</title>
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="js/getdx.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="img-close"><img src="img/close.png" alt="close"></div>
+        <div class="img-logo"><img src="img/logo.png" alt="logo"></div>
+        <div class="btn">
+            <a class="left-btn" href="login.html">登录</a><a class="right-btn" href="P_register.html">注册</a>
+        </div>
+    </div>
+    <div id="main">
+        <div class="nav-person">
+            <a href="P_register.html">个人应聘注册</a>
+            <div class="border"></div>
+        </div>
+        <div class="nav-company">
+            <a href="C_register.html">企业招聘注册</a>
+        </div>
+        <form action="login.html" method="POST" name="pregisterform" onsubmit="return validateform()">
+        <div class="div1">
+            <a>手机号</a>
+            <input type="text" placeholder="请输入11位有效手机号" name="phone" class="input-margin1 ">
+        </div>
+        <div class="div2">
+            <a>短信验证码</a>
+            <input type="text" placeholder="请获取" name="dxyzm" class="input-width1">
+            <a class="get"  id="get" >获取</a>
+        </div>
+        <div class="div2">
+            <a>图形验证码</a>
+            <input type="text" placeholder="请输入" name="txyzm" class="input-width1">
+            <img src="img/yzm.png">
+        
+        </div>
+        <div class="div2">
+            <a>设置密码</a>
+            <input type="password" placeholder="请输入" name="setpwd" class="input-margin2">
+        </div>
+        <div class="div2">
+            <a>再次输入密码</a>
+            <input type="password" placeholder="请输入" name="inputpwd" class="input-margin3">
+        </div>
+        <input type="submit" value="立即注册" id="submit" class="submit0">
+    </form>
+    <div class="checkbox-text"><img id="checkboximage" src="img/checkbox0.png" onclick="checkboxchange()"><a class="a1">我已同意</a><a class="a2">E滁州人才网用户招聘协议</a></div>
+    </div>
+</body>
+</html>
