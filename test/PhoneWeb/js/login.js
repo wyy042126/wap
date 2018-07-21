@@ -51,7 +51,7 @@ function validateform(){
 		alert("请输入密码！");
 		return false;
 	}else{
-		window.location.href='login.html';
+		;
 	}
 }
 
