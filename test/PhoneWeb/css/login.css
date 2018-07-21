@@ -79,6 +79,10 @@ body {
       right: 0;
       top: 0.3333333333rem; }
     #main .div1 input, #main .div2 input {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none; }
+    #main .div1 input, #main .div2 input {
       height: 1.0666666667rem;
       line-height: 1.0666666667rem;
       width: 6.6666666667rem;
@@ -87,11 +91,6 @@ body {
       display: inline-block;
       vertical-align: middle;
       background-color: transparent; }
-    #main .div1 input, #main .div2 input {
-      outline: none;
-      appearance: none;
-      -webkit-appearance: none;
-      -moz-appearance: none; }
     #main .div1 input::-webkit-input-placeholder, #main .div2 input::-webkit-input-placeholder {
       color: #c6c6c8; }
     #main .div1 input:-moz-placeholder, #main .div2 input:-moz-placeholder {

@@ -134,7 +134,13 @@ body{
             display: inline-block;
             color:rgba(112,112,118,1);
             vertical-align: middle;
-             }
+        }
+        //去掉iphone默认浏览器的样式
+        input{ 
+            appearance: none;
+            -webkit-appearance: none;     
+            -moz-appearance : none ; 
+        }
         input{
             height: px2rem(80px);
             line-height: px2rem(80px);
@@ -144,12 +150,6 @@ body{
             display: inline-block;
             vertical-align: middle;
             background-color: transparent;
-        }
-        //去掉iphone默认浏览器的样式
-        input[type="submit"]{ 
-            appearance: none;
-            -webkit-appearance: none;  
-            -moz-appearance : none ;
         }
         .input-width1{
             width: 41%;

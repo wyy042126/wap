@@ -114,6 +114,10 @@ body {
       color: #707076;
       vertical-align: middle; }
     #main .div1 input, #main .div2 input {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none; }
+    #main .div1 input, #main .div2 input {
       height: 1.0666666667rem;
       line-height: 1.0666666667rem;
       width: 5.3333333333rem;
@@ -122,10 +126,6 @@ body {
       display: inline-block;
       vertical-align: middle;
       background-color: transparent; }
-    #main .div1 input[type="submit"], #main .div2 input[type="submit"] {
-      appearance: none;
-      -webkit-appearance: none;
-      -moz-appearance: none; }
     #main .div1 .input-width1, #main .div2 .input-width1 {
       width: 41%; }
     #main .div1 .input-margin1, #main .div2 .input-margin1 {

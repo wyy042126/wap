@@ -93,6 +93,12 @@ body{
             right: 0;
             top: px2rem(25px);
         }
+      //去掉iphone默认浏览器的样式
+        input{ 
+            appearance: none;
+            -webkit-appearance: none;   
+            -moz-appearance : none ;
+         }
         input{
             height: px2rem(80px);
             line-height: px2rem(80px);
@@ -103,13 +109,7 @@ body{
             vertical-align: middle;
             background-color: transparent;
         }
-        //去掉iphone默认浏览器的样式
-        input{ 
-            outline: none;
-            appearance: none;
-            -webkit-appearance: none;   
-            -moz-appearance : none ;
-        }
+      
         input::-webkit-input-placeholder{
             color: #c6c6c8;
         }        
