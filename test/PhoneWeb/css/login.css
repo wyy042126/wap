@@ -35,9 +35,10 @@ body {
       width: 4.6133333333rem;
       height: 0.8533333333rem; }
   #header .btn {
+    position: relative;
     text-align: center; }
     #header .btn a {
-      padding: 0.1466666667rem 0.52rem;
+      padding: 0.1733333333rem 0.52rem;
       background: #FFF;
       line-height: 1.7066666667rem;
       font-size: 0.4rem;
@@ -74,8 +75,9 @@ body {
       vertical-align: middle; }
     #main .div1 .eye, #main .div2 .eye {
       float: right;
+      height: 0.4533333333rem;
       right: 0;
-      top: 0.2666666667rem; }
+      top: 0.3333333333rem; }
     #main .div1 input, #main .div2 input {
       height: 1.0666666667rem;
       border: 0;

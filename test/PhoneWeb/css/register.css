@@ -37,7 +37,7 @@ body {
   #header .btn {
     text-align: center; }
     #header .btn a {
-      padding: 0.1466666667rem 0.52rem;
+      padding: 0.1733333333rem 0.52rem;
       background: #FFF;
       font-size: 0.4rem;
       line-height: 1.7066666667rem;
@@ -150,7 +150,7 @@ body {
       width: 1.7466666667rem;
       text-align: center;
       vertical-align: middle;
-      padding: 0.16rem 0;
+      padding: 0.1866666667rem 0;
       background: white;
       border-radius: 0.0533333333rem;
       border: 0.0266666667rem solid #6C8BFE;
@@ -166,7 +166,7 @@ body {
       width: 1.7466666667rem;
       text-align: center;
       vertical-align: middle;
-      padding: 0.16rem 0;
+      padding: 0.1866666667rem 0;
       background: #F5F6F7;
       border-radius: 0.0533333333rem;
       border: none;
@@ -177,7 +177,6 @@ body {
     #main .div1 img, #main .div2 img {
       position: relative;
       left: 0.3333333333rem;
-      top: 0.1333333333rem;
       display: inline-block;
       vertical-align: middle;
       width: 1.7333333333rem;

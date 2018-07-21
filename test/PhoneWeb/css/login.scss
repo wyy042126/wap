@@ -42,9 +42,10 @@ body{
         }
     }
     .btn {
+        position: relative;
         text-align: center;
         a{
-            padding: px2rem(11px) px2rem(39px);
+            padding: px2rem(13px) px2rem(39px);
             background: #FFF;
             line-height: px2rem(128px);
             font-size:px2rem(30px);
@@ -88,8 +89,9 @@ body{
         }
         .eye{
             float: right;
+            height: px2rem(34px);
             right: 0;
-            top: px2rem(20px);
+            top: px2rem(25px);
         }
         input{
             height: px2rem(80px);
