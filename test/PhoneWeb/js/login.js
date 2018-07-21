@@ -50,8 +50,6 @@ function validateform(){
 	}else if(password==null||password==""){
 		alert("请输入密码！");
 		return false;
-	}else{
-		return true;
 	}
 }
 
