@@ -198,7 +198,10 @@ body {
     color: #979797;
     background: #e5e5e5;
     border-radius: 0.1066666667rem;
-    pointer-events: none; }
+    pointer-events: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none; }
   #main .submit0 {
     width: 6.1333333333rem;
     height: 1.1733333333rem;
@@ -210,7 +213,10 @@ body {
     border-radius: 0.1066666667rem;
     cursor: pointer;
     vertical-align: middle;
-    box-shadow: 0 0.0533333333rem 0.16rem 0 rgba(108, 139, 254, 0.2); }
+    box-shadow: 0 0.0533333333rem 0.16rem 0 rgba(108, 139, 254, 0.2);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none; }
   #main .checkbox-text {
     margin-top: 0.5333333333rem;
     margin-left: 2.1333333333rem;

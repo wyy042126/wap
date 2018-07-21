@@ -162,6 +162,9 @@ body{
         border-radius: px2rem(8px);
         box-shadow:0 px2rem(4px) px2rem(12px) 0 rgba(108,139,254,0.2);
         cursor: pointer;
+        appearance: none;
+        -webkit-appearance: none;     
+        -moz-appearance : none ;
     }
     .line{
         width: px2rem(616px);

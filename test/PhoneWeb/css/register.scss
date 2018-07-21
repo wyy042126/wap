@@ -245,6 +245,9 @@ body{
         background: rgba(229,229,229,1);
         border-radius: px2rem(8px);
         pointer-events: none;
+        appearance: none;
+        -webkit-appearance: none;     
+        -moz-appearance : none ;
     }
     .submit0{
         width: px2rem(460px);
@@ -258,6 +261,9 @@ body{
         cursor: pointer;
         vertical-align:middle;
         box-shadow:0 px2rem(4px) px2rem(12px) 0 rgba(108,139,254,0.2);
+        appearance: none;
+        -webkit-appearance: none;     
+        -moz-appearance : none ;
     }
   
     .checkbox-text{
