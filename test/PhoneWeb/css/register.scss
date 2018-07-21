@@ -137,6 +137,8 @@ body{
              }
         input{
             height: px2rem(80px);
+            line-height: px2rem(80px);
+            width: px2rem(400px);
             border: 0;
             margin-left: px2rem(64px);
             display: inline-block;

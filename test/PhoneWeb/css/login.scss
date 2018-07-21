@@ -95,6 +95,8 @@ body{
         }
         input{
             height: px2rem(80px);
+            line-height: px2rem(80px);
+            width: px2rem(500px);
             border: 0;
             margin-left: px2rem(16px);
             display: inline-block;

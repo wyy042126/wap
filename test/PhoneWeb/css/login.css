@@ -80,6 +80,8 @@ body {
       top: 0.3333333333rem; }
     #main .div1 input, #main .div2 input {
       height: 1.0666666667rem;
+      line-height: 1.0666666667rem;
+      width: 6.6666666667rem;
       border: 0;
       margin-left: 0.2133333333rem;
       display: inline-block;
