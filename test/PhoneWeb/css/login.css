@@ -88,6 +88,7 @@ body {
       vertical-align: middle;
       background-color: transparent; }
     #main .div1 input, #main .div2 input {
+      outline: none;
       appearance: none;
       -webkit-appearance: none;
       -moz-appearance: none; }
