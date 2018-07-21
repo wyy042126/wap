@@ -87,8 +87,10 @@ body {
       display: inline-block;
       vertical-align: middle;
       background-color: transparent; }
-    #main .div1 input[type="submit"], #main .div1 input[type="reset"], #main .div1 input[type="button"], #main .div1 button, #main .div2 input[type="submit"], #main .div2 input[type="reset"], #main .div2 input[type="button"], #main .div2 button {
-      -webkit-appearance: none; }
+    #main .div1 input, #main .div2 input {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none; }
     #main .div1 input::-webkit-input-placeholder, #main .div2 input::-webkit-input-placeholder {
       color: #c6c6c8; }
     #main .div1 input:-moz-placeholder, #main .div2 input:-moz-placeholder {

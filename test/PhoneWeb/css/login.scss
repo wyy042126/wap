@@ -103,8 +103,11 @@ body{
             vertical-align: middle;
             background-color: transparent;
         }
-        input[type="submit"], input[type="reset"], input[type="button"],button { 
-        -webkit-appearance: none;              //去掉iphone默认浏览器的样式
+        //去掉iphone默认浏览器的样式
+        input{ 
+            appearance: none;
+            -webkit-appearance: none;   
+            -moz-appearance : none ;
         }
         input::-webkit-input-placeholder{
             color: #c6c6c8;
