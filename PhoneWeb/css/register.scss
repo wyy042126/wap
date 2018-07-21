@@ -2,8 +2,21 @@
     $rem: 75px;
     @return ($px / $rem) + rem;
 }
+html {
+    min-height: 100%; 
+    /*你需要设置这个参数，确保渐变效果填满整个页面，不会被切断*/
+}
 body{
-    background: #ffffff;
+    /* Chrome 10+, Safari 5.1+ */
+    background: -webkit-linear-gradient(rgba(106,158,255,1) 50%, #ffffff 50%); 
+    /* Opera 11.1+ */
+    background: -o-linear-gradient(rgba(106,158,255,1) 50%, #ffffff 50%); 
+    /* Firefox 3.6+ */
+    background: -moz-linear-gradient(rgba(106,158,255,1) 50%, #ffffff 50%); 
+    /* 标准语法（一定要放在最后）*/
+    background: linear-gradient(rgba(106,158,255,1) 50%, #ffffff 50%); 
+    /*最好设置一个背景颜色，万一渐变效果加载失败，背景也不会是空白的*/
+    background-color: #ffffff; 
 }
 #header {
     width: 100%;
@@ -32,7 +45,7 @@ body{
         text-align: center;
         // margin-top: px2rem(47px);
         a{
-            padding: px2rem(11px) px2rem(39px);
+            padding: px2rem(13px) px2rem(39px);
             background: #FFF;
             font-size:px2rem(30px);
             line-height: px2rem(128px);
@@ -54,7 +67,7 @@ body{
 #main {
     width: 100%;
     background:#FFF;
-    border-radius:8px 8px 0px 0px;
+    border-radius:px2rem(8px) px2rem(8px) 0 0;
     .nav-person{
         display: inline-block;
         width: px2rem(264px);
@@ -110,7 +123,6 @@ body{
         font-family:PingFangSC-Regular;
         color:rgba(198,198,200,1);
         width: px2rem(654px);
-        height: px2rem(80px);
         margin-top: px2rem(20px);
         margin-left: px2rem(48px);
         margin-right: px2rem(48px);
@@ -122,17 +134,22 @@ body{
             display: inline-block;
             color:rgba(112,112,118,1);
             vertical-align: middle;
-            margin-top: px2rem(19px);
-             }
+        }
+        //去掉iphone默认浏览器的样式
+        input{ 
+            appearance: none;
+            -webkit-appearance: none;     
+            -moz-appearance : none ; 
+        }
         input{
-            height: px2rem(42px);
+            height: px2rem(80px);
+            line-height: px2rem(80px);
+            width: px2rem(400px);
             border: 0;
-            width: 60%;
             margin-left: px2rem(64px);
-            margin-top: px2rem(19px);
             display: inline-block;
             vertical-align: middle;
-            outline: none;
+            background-color: transparent;
         }
         .input-width1{
             width: 41%;
@@ -169,50 +186,48 @@ body{
             display: none;
         }
         .get{
+            display: inline-block;
             position: relative;
-            top: px2rem(-5px);
-            left: px2rem(5px);
+            left: px2rem(25px);           
             height: px2rem(56px);
             width: px2rem(131px);
             text-align: center;
-            padding: px2rem(12px) 0;
+            vertical-align: middle;
+            padding: px2rem(14px) 0;
             background:rgba(255,255,255,1);
             border-radius:px2rem(4px);
             border:px2rem(2px) solid #6C8BFE;
             font-size:px2rem(28px);
             font-family:PingFangSC-Regular;
             color:rgba(108,139,254,1);   
-            margin: px2rem(14px) 0 0 0;
             cursor: pointer;
         }
         .getafter{
+            display: inline-block;
             position: relative;
-            top: px2rem(-5px);
-            left: px2rem(5px);
+            left: px2rem(25px);           
             height: px2rem(56px);
             width: px2rem(131px);
             text-align: center;
-            padding: px2rem(12px) 0;
+            vertical-align: middle;
+            padding: px2rem(14px) 0;
             background:#F5F6F7;
             border-radius:px2rem(4px);
             border: none;
             font-size:px2rem(28px);
             font-family:PingFangSC-Regular;
             color: #c6c6c8;   
-            margin: px2rem(14px) 0 0 0;
             pointer-events: none;
         }
-        .img{
+        img{
             position: relative;
-            top: px2rem(19px);
-            display: block;
-            img{
-                position: relative;
-                top: px2rem(-65px);
-                left: px2rem(520px);
-                width: px2rem(130px);
-                height: px2rem(50px);
-            }
+            left: px2rem(25px);           
+            // top: px2rem(10px);
+            display: inline-block;
+            vertical-align: middle;
+            width: px2rem(130px);
+            height: px2rem(50px);
+            
         }
      
       
@@ -230,6 +245,9 @@ body{
         background: rgba(229,229,229,1);
         border-radius: px2rem(8px);
         pointer-events: none;
+        appearance: none;
+        -webkit-appearance: none;     
+        -moz-appearance : none ;
     }
     .submit0{
         width: px2rem(460px);
@@ -241,6 +259,11 @@ body{
         background: #6C8BFE;
         border-radius: px2rem(8px);
         cursor: pointer;
+        vertical-align:middle;
+        box-shadow:0 px2rem(4px) px2rem(12px) 0 rgba(108,139,254,0.2);
+        appearance: none;
+        -webkit-appearance: none;     
+        -moz-appearance : none ;
     }
   
     .checkbox-text{

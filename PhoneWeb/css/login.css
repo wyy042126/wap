@@ -1,5 +1,19 @@
+@charset "UTF-8";
+html {
+  min-height: 100%;
+  /*你需要设置这个参数，确保渐变效果填满整个页面，不会被切断*/ }
+
 body {
-  background: #FFF; }
+  /* Chrome 10+, Safari 5.1+ */
+  background: -webkit-linear-gradient(#6a9eff 50%, #ffffff 50%);
+  /* Opera 11.1+ */
+  background: -o-linear-gradient(#6a9eff 50%, #ffffff 50%);
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(#6a9eff 50%, #ffffff 50%);
+  /* 标准语法（一定要放在最后）*/
+  background: linear-gradient(#6a9eff 50%, #ffffff 50%);
+  /*最好设置一个背景颜色，万一渐变效果加载失败，背景也不会是空白的*/
+  background-color: #ffffff; }
 
 #header {
   width: 100%;
@@ -21,9 +35,10 @@ body {
       width: 4.6133333333rem;
       height: 0.8533333333rem; }
   #header .btn {
+    position: relative;
     text-align: center; }
     #header .btn a {
-      padding: 0.1466666667rem 0.52rem;
+      padding: 0.1733333333rem 0.52rem;
       background: #FFF;
       line-height: 1.7066666667rem;
       font-size: 0.4rem;
@@ -42,13 +57,11 @@ body {
 #main {
   width: 100%;
   background: #FFF;
-  border-radius: 8px 8px 0px 0px; }
+  border-radius: 0.1066666667rem 0.1066666667rem 0 0; }
   #main .div1, #main .div2 {
     font-size: 0.4rem;
     font-family: PingFangSC-Regular;
     width: 8.72rem;
-    height: 1.0666666667rem;
-    margin-top: 0.2666666667rem;
     margin-left: 0.64rem;
     margin-right: 0.64rem;
     border: none;
@@ -56,20 +69,28 @@ body {
     border-bottom-color: #E5E5E5;
     border-bottom-width: 0.0133333333rem; }
     #main .div1 img, #main .div2 img {
-      width: 0.52rem;
-      height: 0.52rem;
+      width: 0.5333333333rem;
+      height: 0.5333333333rem;
       position: relative;
-      margin-top: 0.24rem; }
+      vertical-align: middle; }
+    #main .div1 .eye, #main .div2 .eye {
+      float: right;
+      height: 0.4533333333rem;
+      right: 0;
+      top: 0.3333333333rem; }
     #main .div1 input, #main .div2 input {
-      font-size: 0.4rem;
-      width: 7.0266666667rem;
-      height: 0.5866666667rem;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none; }
+    #main .div1 input, #main .div2 input {
+      height: 1.0666666667rem;
+      line-height: 1.0666666667rem;
+      width: 6.6666666667rem;
       border: 0;
       margin-left: 0.2133333333rem;
-      margin-top: -0.3333333333rem;
       display: inline-block;
       vertical-align: middle;
-      outline: none; }
+      background-color: transparent; }
     #main .div1 input::-webkit-input-placeholder, #main .div2 input::-webkit-input-placeholder {
       color: #c6c6c8; }
     #main .div1 input:-moz-placeholder, #main .div2 input:-moz-placeholder {
@@ -85,7 +106,10 @@ body {
     #main .div1 input::-ms-reveal, #main .div2 input::-ms-reveal {
       display: none; }
   #main .div1 {
-    margin-top: 0.8533333333rem; }
+    position: relative;
+    top: 0.8533333333rem; }
+  #main .div2 {
+    margin-top: 1.12rem; }
   #main .text {
     font-size: 0.4rem;
     font-family: PingFangSC-Regular;
@@ -103,17 +127,11 @@ body {
     color: white;
     background: #6C8BFE;
     border-radius: 0.1066666667rem;
-    cursor: pointer; }
-  #main .submit2 {
-    width: 6.1333333333rem;
-    height: 1.1733333333rem;
-    margin: 0.96rem 0 0 1.9333333333rem;
-    font-size: 0.48rem;
-    font-family: PingFangSC-Semibold;
-    color: #979797;
-    background: #E5E5E5;
-    border-radius: 0.1066666667rem;
-    pointer-events: none; }
+    box-shadow: 0 0.0533333333rem 0.16rem 0 rgba(108, 139, 254, 0.2);
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none; }
   #main .line {
     width: 8.2133333333rem;
     height: 0;

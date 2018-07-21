@@ -1,5 +1,19 @@
+@charset "UTF-8";
+html {
+  min-height: 100%;
+  /*你需要设置这个参数，确保渐变效果填满整个页面，不会被切断*/ }
+
 body {
-  background: #ffffff; }
+  /* Chrome 10+, Safari 5.1+ */
+  background: -webkit-linear-gradient(#6a9eff 50%, #ffffff 50%);
+  /* Opera 11.1+ */
+  background: -o-linear-gradient(#6a9eff 50%, #ffffff 50%);
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(#6a9eff 50%, #ffffff 50%);
+  /* 标准语法（一定要放在最后）*/
+  background: linear-gradient(#6a9eff 50%, #ffffff 50%);
+  /*最好设置一个背景颜色，万一渐变效果加载失败，背景也不会是空白的*/
+  background-color: #ffffff; }
 
 #header {
   width: 100%;
@@ -23,7 +37,7 @@ body {
   #header .btn {
     text-align: center; }
     #header .btn a {
-      padding: 0.1466666667rem 0.52rem;
+      padding: 0.1733333333rem 0.52rem;
       background: #FFF;
       font-size: 0.4rem;
       line-height: 1.7066666667rem;
@@ -40,7 +54,7 @@ body {
 #main {
   width: 100%;
   background: #FFF;
-  border-radius: 8px 8px 0px 0px; }
+  border-radius: 0.1066666667rem 0.1066666667rem 0 0; }
   #main .nav-person {
     display: inline-block;
     width: 3.52rem;
@@ -88,7 +102,6 @@ body {
     font-family: PingFangSC-Regular;
     color: #c6c6c8;
     width: 8.72rem;
-    height: 1.0666666667rem;
     margin-top: 0.2666666667rem;
     margin-left: 0.64rem;
     margin-right: 0.64rem;
@@ -99,17 +112,20 @@ body {
     #main .div1 a, #main .div2 a {
       display: inline-block;
       color: #707076;
-      vertical-align: middle;
-      margin-top: 0.2533333333rem; }
+      vertical-align: middle; }
     #main .div1 input, #main .div2 input {
-      height: 0.56rem;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none; }
+    #main .div1 input, #main .div2 input {
+      height: 1.0666666667rem;
+      line-height: 1.0666666667rem;
+      width: 5.3333333333rem;
       border: 0;
-      width: 60%;
       margin-left: 0.8533333333rem;
-      margin-top: 0.2533333333rem;
       display: inline-block;
       vertical-align: middle;
-      outline: none; }
+      background-color: transparent; }
     #main .div1 .input-width1, #main .div2 .input-width1 {
       width: 41%; }
     #main .div1 .input-margin1, #main .div2 .input-margin1 {
@@ -133,47 +149,44 @@ body {
     #main .div1 input::-ms-reveal, #main .div2 input::-ms-reveal {
       display: none; }
     #main .div1 .get, #main .div2 .get {
+      display: inline-block;
       position: relative;
-      top: -0.0666666667rem;
-      left: 0.0666666667rem;
+      left: 0.3333333333rem;
       height: 0.7466666667rem;
       width: 1.7466666667rem;
       text-align: center;
-      padding: 0.16rem 0;
+      vertical-align: middle;
+      padding: 0.1866666667rem 0;
       background: white;
       border-radius: 0.0533333333rem;
       border: 0.0266666667rem solid #6C8BFE;
       font-size: 0.3733333333rem;
       font-family: PingFangSC-Regular;
       color: #6c8bfe;
-      margin: 0.1866666667rem 0 0 0;
       cursor: pointer; }
     #main .div1 .getafter, #main .div2 .getafter {
+      display: inline-block;
       position: relative;
-      top: -0.0666666667rem;
-      left: 0.0666666667rem;
+      left: 0.3333333333rem;
       height: 0.7466666667rem;
       width: 1.7466666667rem;
       text-align: center;
-      padding: 0.16rem 0;
+      vertical-align: middle;
+      padding: 0.1866666667rem 0;
       background: #F5F6F7;
       border-radius: 0.0533333333rem;
       border: none;
       font-size: 0.3733333333rem;
       font-family: PingFangSC-Regular;
       color: #c6c6c8;
-      margin: 0.1866666667rem 0 0 0;
       pointer-events: none; }
-    #main .div1 .img, #main .div2 .img {
+    #main .div1 img, #main .div2 img {
       position: relative;
-      top: 0.2533333333rem;
-      display: block; }
-      #main .div1 .img img, #main .div2 .img img {
-        position: relative;
-        top: -0.8666666667rem;
-        left: 6.9333333333rem;
-        width: 1.7333333333rem;
-        height: 0.6666666667rem; }
+      left: 0.3333333333rem;
+      display: inline-block;
+      vertical-align: middle;
+      width: 1.7333333333rem;
+      height: 0.6666666667rem; }
   #main .div1 {
     margin-top: 0.5333333333rem; }
   #main .submit1 {
@@ -185,7 +198,10 @@ body {
     color: #979797;
     background: #e5e5e5;
     border-radius: 0.1066666667rem;
-    pointer-events: none; }
+    pointer-events: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none; }
   #main .submit0 {
     width: 6.1333333333rem;
     height: 1.1733333333rem;
@@ -195,7 +211,12 @@ body {
     color: white;
     background: #6C8BFE;
     border-radius: 0.1066666667rem;
-    cursor: pointer; }
+    cursor: pointer;
+    vertical-align: middle;
+    box-shadow: 0 0.0533333333rem 0.16rem 0 rgba(108, 139, 254, 0.2);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none; }
   #main .checkbox-text {
     margin-top: 0.5333333333rem;
     margin-left: 2.1333333333rem;

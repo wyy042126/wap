@@ -2,24 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, maximum-scale=1, user-scalable=no"> -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>安全验证</title>
+    <title>E滁州人才网</title>
     <link rel="stylesheet" href="css/findpassword.css">
     <link rel="stylesheet" href="css/reset.css">
     <script src="js/safe.js"></script>
 </head>
 <body>
     <div id="main">
-        <div class="main-tittle">
+        <div class="main-tittle" id="main-tittle">
             <div class="left-arrowhead" onclick="backlogin()"></div>
             <a class="color2" href="safe.html">安全验证</a>
             <div class="right-arrowhead"></div>
             <a class="a2 color1">重新设置登录密码</a>
         </div>
-        <form action="setpassword.html" method="POST" name="safeform" onsubmit="return validateform()">
+        <form action="setpassword.html" method="GET" name="safeform" onsubmit="return validateform()">
         <div class="div1">
-            <a class="a1">手机号</a>
+            <a>手机号</a>
             <input type="text" placeholder="请输入登录手机号"  id="phone" class="input1">
         </div>
         <div class="div2">

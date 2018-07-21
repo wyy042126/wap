@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, maximum-scale=1, user-scalable=no"> -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>登录</title>
+    <title>E滁州人才网</title>
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/reset.css">
     <script src="js/login.js"></script>
@@ -18,18 +18,18 @@
         </div>
     </div>
     <div id="main">
-        <form action="#" method="POST">
+        <form action="#" method="GET" name="loginform" onsubmit="return validateform()">
         <div class="div1">
             <img src="img/user.png">
-            <input type="text" placeholder="输入用户名/手机号码" name="username" id="username" >
+            <input type="text" placeholder="输入用户名/手机号码" name="username" >
         </div>
         <div class="div2">
             <img src="img/psw.png">
-            <input type="password" placeholder="输入登录密码" name="password" id="password" >
-            <img src="img/eyes0.png"  id="pwd" >
+            <input type="password" placeholder="输入登录密码" name="password" id="password">
+            <img src="img/eyes0.png"  id="pwd" class="eye">
         </div>
         <div class="text"><a href="safe.html">忘记密码</a></div>
-        <input type="submit" value="登录" name="submit" id="submit" class="submit2">
+        <input type="submit" value="登录" name="submit" class="submit1">
     </form>
     <div class="line"></div>
     <div class="line-text"><a>使用第三方登录</a></div>

@@ -17,6 +17,7 @@ window.onload=function(){
 	
 	var j=0;
 	var pwd=document.getElementById('pwd');
+	var password=document.getElementById('password');
 	pwd.onclick=function(){
 		j=(j+1)%2;
 		pwd.src='img/eyes'+j+'.png';
@@ -27,52 +28,8 @@ window.onload=function(){
 			password.setAttribute('type','password');
 		}
 	}
-
-
-	//根据输入框是否有值来改变suamit样式
-	var password = document.getElementById('password');     
-	var username=document.getElementById('username');
-	var submit=document.getElementById('submit');
-	var a=0;
-	var b=0;
-	username.oninput=function(){
-		if('oninput' in password){ 
-		password.addEventListener("input",changesubmit,false); 
-	}else{ 
-		password.onpropertychange = changesubmit; 
-	} 
-	if('oninput' in username){ 
-		username.addEventListener("input",changesubmit,false); 
-	}else{ 
-		username.onpropertychange = changesubmit; 
-	} 
 }
 
-function changesubmit(){
-		if(password.value.length>0){
-			a=1;
-		}else{
-			a=0;
-		}
-		if(username.value.length>0){
-			b=1;
-		}else{
-			b=0;
-		}
-		if(a==1&&b==1){
-			submit.className='submit1';
-		}else{
-			submit.className='submit2';
-		}
-	}
-} 
-
-//点击切换checkbox按钮图片
-var i=0;
-function checkboxchange(){
-    i=(i+1)%2;
-    document.getElementById('checkboximage').src='img/checkbox'+i+'.png';
-}
 
 //返回登录
 function backlogin(){
@@ -81,6 +38,21 @@ function backlogin(){
 //返回安全验证
 function backsafe(){
 	window.location.href="safe.html";
+}
+
+//验证登录
+function validateform(){
+	var username=document.forms['loginform']['username'].value;
+	var password=document.forms['loginform']['password'].value;
+	if(username==null||username==""){
+		alert("请输入用户名或手机号码！");
+		return false;
+	}else if(password==null||password==""){
+		alert("请输入密码！");
+		return false;
+	}else{
+		return true;
+	}
 }
 
 

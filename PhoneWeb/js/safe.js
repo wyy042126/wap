@@ -79,6 +79,9 @@ function changesubmit(){
     }, 1000)
 };
 
+
+
+
 } 
 //返回登录
 function backlogin(){
@@ -90,7 +93,7 @@ function backsafe(){
 }
 function validateform(){
 	var phone=document.forms["safeform"]["phone"].value;
-	var yzm=document.forms["safeform"]["yzm"].value;
+	var dxyzm=document.forms["safeform"]["yzm"].value;
 
 	var reg = new RegExp("^[0-9]*$");  //数字正则
 	var regPhoneNum = /^(((13|14|15|18|17)\d{9}))$/;            //电话正则
@@ -105,6 +108,8 @@ function validateform(){
 		return true;
 	}
 }
+
+
 
 
 
